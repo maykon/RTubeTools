@@ -16,16 +16,18 @@ require 'open-uri'
 STDOUT.sync = true
 percent = total = 0
 windows_sys = ENV['USERPROFILE']
-music_folder = windows_sys.nil? ? File.join(ENV['HOME'],"/Music/RTubeToMp3") : File.join(ENV['USERPROFILE'], "\\Documents\\Music\\RTubeToMp3\\") # esta é a página em que serão salvos os capítulos
+MUSIC_FOLDER = windows_sys.nil? ? File.join(ENV['HOME'],"/Musica/RTubeToMp3") : File.join(ENV['USERPROFILE'], "\\Documents\\Musics\\RTubeToMp3\\") # this folder will have all musics downloaded
+#MUSIC_FOLDER = /home/[USERNAME]/Musica/RTubeToMp3 ## insert the folder path from downloaded of musics
+
 agent = Mechanize.new { |agent| agent.follow_meta_refresh = true }
 
 exit 0 if ARGV.size == 0 # exit if no arguments
 link_video = ARGV.first
 
 #create folder if no exist
-unless File.exist? music_folder
-  puts "Creating #{music_folder}"
-  FileUtils.mkdir_p(music_folder)
+unless File.exist? MUSIC_FOLDER
+  puts "Creating #{MUSIC_FOLDER}"
+  FileUtils.mkdir_p(MUSIC_FOLDER)
 end
 
 # index page
@@ -53,7 +55,7 @@ puts "Link to download: #{video}"
 
 	print "Downloading...0%"
 	
-	video_file = File.join(music_folder, video_name.split("/").last)
+	video_file = File.join(MUSIC_FOLDER, video_name.split("/").last)
  open(video_file, 'wb') do |file|
      file.write(open(video, :content_length_proc => lambda {|t|
    	 		if t && 0 < t
@@ -67,6 +69,6 @@ puts "Link to download: #{video}"
   end  
 puts "\nDownload complete!"
 
-music_dest = "#{music_folder}/#{video_name}.mp3"
+music_dest = "#{MUSIC_FOLDER}/#{video_name}.mp3"
 system "ffmpeg -i #{video_file} -ab 128k -ac 2 -acodec libmp3lame -vn -y #{music_dest}"
 system "rm -Rf #{video_file}"

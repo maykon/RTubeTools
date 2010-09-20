@@ -28,13 +28,15 @@ h2. Usage
 Put this script in your PATH and download from youtube.com.br like this:
 <pre><code>ruby RTubeToMp3.rb [http://www.youtube.com/watch?v=uquXebuoFK4]</code></pre>
 
-You will find the downloaded music under $HOME/Music/RTubeToMp3.
+You will find the downloaded music under $HOME/Musica/RTubeToMp3.
 
 For Windows user you will find downloaded music under C:\Documents and Settings\[USERNAME]\Documents\RTubeToMp3.
 
+If you want to change the folder path where they will be downloaded the music, you can to change the variable MUSIC_FOLDER giving the full path of the folder.
+
 Meaning:
  * Link to youtube: http://www.youtube.com/watch?v=uquXebuoFK4 (video Foo Fighters Learn to Fly)
-
+ 
 h2. Authors
 
 Copyright (c) 2010:
