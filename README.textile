@@ -4,7 +4,7 @@ h1. RTubeToMp3
 
 h1. DESCRIPTION
 
-Convert videos from Youtube to files Mp3.
+Script to convert youtube videos to mp3 file.
 
 h2. Dependencies
 
@@ -28,9 +28,9 @@ h2. Usage
 Put this script in your PATH and download from youtube.com.br like this:
 <pre><code>ruby RTubeToMp3.rb [http://www.youtube.com/watch?v=uquXebuoFK4]</code></pre>
 
-You will find the downloaded chapters under $HOME/Music/RTubeToMp3.
+You will find the downloaded music under $HOME/Music/RTubeToMp3.
 
-For Windows user you will find downloaded chapters under C:\Documents and Settings\[USERNAME]\Documents\RTubeToMp3.
+For Windows user you will find downloaded music under C:\Documents and Settings\[USERNAME]\Documents\RTubeToMp3.
 
 Meaning:
  * Link to youtube: http://www.youtube.com/watch?v=uquXebuoFK4 (video Foo Fighters Learn to Fly)
