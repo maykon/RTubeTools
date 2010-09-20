@@ -39,7 +39,7 @@ link = agent.page.search("//script")[9].text.gsub(pattern).first
 link = link[19...link.length]
 
 video_name = agent.page.search("//title").text.gsub(name_pattern).first
-video_name = video_name[1..video_name.length].gsub(/[\n\s]/, "")
+video_name = video_name[1..video_name.length].gsub(/[\n\s()]/, "")
 video_name = video_name[0..video_name.length-1]
 
 video = link.gsub(url_pattern).first
@@ -54,7 +54,7 @@ puts "Link to download: #{video}"
 	print "Downloading...0%"
 	
 	video_file = File.join(music_folder, video_name.split("/").last)
-  open(video_file, 'wb') do |file|
+ open(video_file, 'wb') do |file|
      file.write(open(video, :content_length_proc => lambda {|t|
    	 		if t && 0 < t
         	total = t        

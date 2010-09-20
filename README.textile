@@ -26,11 +26,14 @@ The bug tracker is available here:
 h2. Usage
 
 Put this script in your PATH and download from youtube.com.br like this:
-<pre><code>ruby RTubeToMp3.rb Link_to_Youtube</code></pre>
+<pre><code>ruby RTubeToMp3.rb [http://www.youtube.com/watch?v=uquXebuoFK4]</code></pre>
 
 You will find the downloaded chapters under $HOME/Music/RTubeToMp3.
 
 For Windows user you will find downloaded chapters under C:\Documents and Settings\[USERNAME]\Documents\RTubeToMp3.
+
+Meaning:
+ * Link to youtube: http://www.youtube.com/watch?v=uquXebuoFK4 (video Foo Fighters Learn to Fly)
 
 h2. Authors
 
