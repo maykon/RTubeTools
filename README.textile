@@ -1,0 +1,47 @@
+h1. RTubeToMp3
+
+* http://github.com/maykon/RTubeToMp3
+
+h1. DESCRIPTION
+
+Convert videos from Youtube to files Mp3.
+
+h2. Dependencies
+
+* ruby 1.8.6
+* mechanize[http://mechanize.rubyforge.org]
+* nokogiri[http://nokogiri.rubyforge.org]
+* open-uri
+
+h2. SUPPORT:
+
+If you need support send e-mail to:
+
+  * maykon_capellari@yahoo.com.br
+
+The bug tracker is available here:
+
+  * http://github.com/maykon/RTubeToMp3/issues
+
+h2. Usage
+
+Put this script in your PATH and download from youtube.com.br like this:
+<pre><code>ruby RTubeToMp3.rb Link_to_Youtube</code></pre>
+
+You will find the downloaded chapters under $HOME/Music/RTubeToMp3.
+
+For Windows user you will find downloaded chapters under C:\Documents and Settings\[USERNAME]\Documents\RTubeToMp3.
+
+h2. Authors
+
+Copyright (c) 2010:
+
+* Maykon Luís Capellari {[http://github.com/maykon] (maykon_capellari@yahoo.com.br)}
+
+h2. Credits
+
+* Original project: Maykon Luís Capellari {[http://github.com/maykon] (maykon_capellari@yahoo.com.br) @maykoncapellari}
+  
+h2. License
+
+This library is distributed under the GPL.  Please see the LICENSE file.
