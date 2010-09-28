@@ -9,8 +9,6 @@ require 'open-uri'
 require 'youtube_tools'
 require 'rtube_to_mp3'
 
-
-
 class WdDownloader
 	@@dw_items = []
 	@@wd = nil
