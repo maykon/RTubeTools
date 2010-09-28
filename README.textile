@@ -4,13 +4,12 @@ h1. RTubeToMp3
 
 h1. DESCRIPTION
 
-Script to convert youtube videos to mp3 file.
+ Program to find and to convert youtube videos to mp3 file.
 
 h2. Dependencies
 
 * ruby 1.8.6
-* mechanize[http://mechanize.rubyforge.org]
-* nokogiri[http://nokogiri.rubyforge.org]
+* hpricot[http://github.com/hpricot]
 * open-uri
 
 h2. SUPPORT:
@@ -25,17 +24,13 @@ The bug tracker is available here:
 
 h2. Usage
 
-Put this script in your PATH and download from youtube.com.br like this:
-<pre><code>ruby RTubeToMp3.rb [http://www.youtube.com/watch?v=uquXebuoFK4]</code></pre>
+Opening the Shoes application and click on "Open an App" or choose the menu Shoes/Open and select the file *rtube_to_mp3_shoes.rb* which is within the past lib.
 
 You will find the downloaded music under $HOME/Musica/RTubeToMp3.
 
 For Windows user you will find downloaded music under C:\Documents and Settings\[USERNAME]\Documents\RTubeToMp3.
 
 If you want to change the folder path where they will be downloaded the music, you can to change the variable MUSIC_FOLDER giving the full path of the folder.
-
-Meaning:
- * Link to youtube: http://www.youtube.com/watch?v=uquXebuoFK4 (video Foo Fighters Learn to Fly)
  
 h2. Authors
 
