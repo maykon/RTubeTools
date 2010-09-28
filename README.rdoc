@@ -10,6 +10,7 @@ Program to find and to convert youtube videos to mp3 file.
 
 * ruby 1.8.6
 * hpricot[http://github.com/hpricot]
+* YoutubeTools[http://github.com/maykon/YoutubeTools]
 * open-uri
 
 == SUPPORT:
