@@ -1,14 +1,15 @@
-== RTubeToMp3
+== RTubeTools
 
-* http://github.com/maykon/RTubeToMp3
+* http://github.com/maykon/RTubeTools
 
 == DESCRIPTION
 
-Program to find and to convert youtube videos to mp3 file.
+Program to find videos and to convert for many formats.
 
 == Dependencies
 
 * ruby 1.8.6
+* Shoes[http://shoes.heroku.com/]
 * hpricot[http://github.com/hpricot]
 * YoutubeTools[http://github.com/maykon/YoutubeTools]
 * open-uri
@@ -21,15 +22,15 @@ If you need support send e-mail to:
 
 The bug tracker is available here:
 
-  * http://github.com/maykon/RTubeToMp3/issues
+  * http://github.com/maykon/RTubeTools/issues
 
 == Usage
 
-Opening the Shoes application and click on "Open an App" or choose the menu Shoes/Open and select the file *rtube_to_mp3_shoes.rb* which is within the past lib.
+Opening the Shoes application and click on "Open an App" or choose the menu Shoes/Open and select the file *rtube_tools_shoes.rb* which is within the past lib.
 
-You will find the downloaded music under *$HOME/Musica/RTubeToMp3*.
+You will find the downloaded music under *$HOME/Musica/RTubeTools*.
 
-For Windows user you will find downloaded music under *C:\Documents and Settings\[USERNAME]\Documents\RTubeToMp3*.
+For Windows user you will find downloaded music under *C:\Documents and Settings\[USERNAME]\Documents\RTubeTools*.
 
 If you want to change the folder path where they will be downloaded the music, you can to change the variable *FOLDER_PATH* giving the full path of the folder.
  
