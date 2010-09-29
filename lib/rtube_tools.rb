@@ -2,7 +2,7 @@ require 'youtube_tools'
 
 class RtubeTools
 	include YoutubeTools
-	FOLDER_PATH = File.join(ENV['HOME'],"/Musica/RTubeToMp3") # Folder Path from musics
+	FOLDER_PATH = File.join(ENV['HOME'],"/Musica/RTubeTools") # Folder Path from musics
 	
 	def searcher(search, options={})
 		Searcher.new(search, options)
