@@ -1,6 +1,6 @@
 Shoes.setup do
 	Gem.sources = %w[http://gems.github.com/ http://gems.rubyforge.org/ http://rubygems.org/]
-	gem "YoutubeTools >= 0.0.3"
+	gem "YoutubeTools >= 0.0.4"
 	gem "hpricot"
 end
 
